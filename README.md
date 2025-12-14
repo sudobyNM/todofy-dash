@@ -1,16 +1,39 @@
-# React + Vite
+A full-stack todo management application featuring a responsive React frontend and a Node.js/Express backend.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
 
-Currently, two official plugins are available:
+- **Authentication**: Secure Signup/Login using JWT and bcrypt password hashing.
+- **Dashboard**: Interactive task management with filtering, searching, and visual statistics.
+- **Responsive Design**: Mobile-first UI built with Tailwind CSS.
+- **CRUD Operations**: Create, Read, Update, and Delete tasks.
+- **Mock Mode**: The frontend currently runs in "Mock Mode" using LocalStorage for zero-setup previews.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Structure
 
-## React Compiler
+```
+├── components/       # Reusable UI components 
+├── context/          # React Context (AuthContext)
+├── pages/            # Page components 
+├── services/         # API services
+├── backend/          # Node.js/Express Backend
+│   ├── config/       # Database configuration
+│   ├── controllers/  # Route logic
+│   ├── middleware/   # Auth middleware
+│   ├── routes/       # API routes
+│   └── server.js     # Entry point
+└── main.tsx          # Frontend entry
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Setup & Installation
 
-## Expanding the ESLint configuration
+### Frontend
+The frontend is built with Vite/React.
+1. `npm install`
+2. `npm run dev`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Backend
+The backend is located in the `backend/` directory.
+1. `cd backend`
+2. `npm install`
+3. `npm start`
+4. Set environment variables in a `.env` file: `JWT_SECRET`, `MONGO_URI`, `PORT`.
