@@ -1,7 +1,7 @@
 {
   "name": "todofy-backend",
   "version": "1.0.0",
-  "description": "Node.js/Express backend for TaskFlow Pro",
+  "description": "Node.js/Express backend for Todofy application",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
