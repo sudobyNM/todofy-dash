@@ -11,9 +11,9 @@ A full-stack todo management application featuring a responsive React frontend a
 ## Project Structure
 
 ```
-├── components/       # Reusable UI components 
+├── components/       # Reusable UI components
 ├── context/          # React Context (AuthContext)
-├── pages/            # Page components 
+├── pages/            # Page components
 ├── services/         # API services
 ├── backend/          # Node.js/Express Backend
 │   ├── config/       # Database configuration
@@ -27,12 +27,16 @@ A full-stack todo management application featuring a responsive React frontend a
 ## Setup & Installation
 
 ### Frontend
+
 The frontend is built with Vite/React.
+
 1. `npm install`
 2. `npm run dev`
 
 ### Backend
+
 The backend is located in the `backend/` directory.
+
 1. `cd backend`
 2. `npm install`
 3. `npm start`
